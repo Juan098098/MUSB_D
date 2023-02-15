@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="90dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/origen"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:hint="Origen"
+                android:inputType="textAutoComplete"
+                android:textColorHint="#FF6600"
+                android:textColorLink="@android:color/holo_blue_light" />
+
+            <AutoCompleteTextView
+                android:id="@+id/destino"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="Destino"
+                android:inputType="textAutoComplete"
+                android:textColorHint="#FF6600"
+                android:textColorLink="@android:color/holo_blue_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button0"
+                android:background="@drawable/cambio"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:background="@drawable/lupa"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="57.5dp"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:alpha="0.75"
+                android:elevation="1dp"
+                android:text="ToggleButton"
+                android:textOff="5"
+                android:textOn="5" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:alpha="0.75"
+                android:elevation="1dp"
+                android:text="ToggleButton"
+                android:textOff="4"
+                android:textOn="4" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:alpha="0.75"
+                android:elevation="1dp"
+                android:text="ToggleButton"
+                android:textOff="3"
+                android:textOn="3" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton7"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:alpha="0.75"
+                android:elevation="1dp"
+                android:text="ToggleButton"
+                android:textOff="2"
+                android:textOn="2" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton8"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:alpha="0.75"
+                android:elevation="1dp"
+                android:text="ToggleButton"
+                android:textOff="1"
+                android:textOn="1" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</TableLayout>

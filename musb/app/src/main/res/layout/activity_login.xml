@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/usb">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/usb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:layout_below="@+id/imgLogo"
+        android:background="@color/usb"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EFAD5B">
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ivUser"
+                android:layout_alignTop="@+id/ivUser"
+                android:layout_alignRight="@+id/ivUser"
+                android:layout_alignBottom="@+id/ivUser"
+                android:layout_marginLeft="40dp"
+                android:hint="Usuario" />
+
+            <ImageView
+                android:id="@+id/ivPass"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ivUser"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ivPass"
+                android:layout_alignTop="@+id/ivPass"
+                android:layout_alignRight="@+id/ivPass"
+                android:layout_alignBottom="@+id/ivPass"
+                android:layout_marginLeft="40dp"
+                android:hint="Contraseña"
+                android:inputType="textWebPassword" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ivPass"
+                android:layout_alignLeft="@+id/ivPass"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="25dp"
+                android:text="Iniciar Sesión" />
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/ivPass"
+                android:layout_alignBottom="@+id/btnLogin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="-2dp"
+                android:layout_marginBottom="-62dp"
+                android:text="¿Olvidate tu contraseña?"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvSign"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/ivPass"
+                android:layout_alignBottom="@+id/btnLogin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="-120dp"
+                android:text="Crear cuenta nueva"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+
+            <TextView
+                android:text="
+        \nLa aplicación Ubicat en su estructura se encuentra compuesta por cuatro (4) módulos dispuestos de la siguiente forma:
+        \n
+        \n\t•	Dependencias: el cual da a conocer los diferentes lugares de la universidad
+        \n\t•	Vista: el cual permite seleccionar entre 2 diferentes apreciaciones del mapa dispuesto para la ubicación
+        \n
+        \n\tEsta opción lleva a la ventana principal de la aplicación donde se tiene a disposición los siguientes elementos:
+
+        \n\t\to	2 campos de texto para el ingreso de origen y destino
+        \n\t\to	Un botón de intercambio el cual asigna al campo origen el texto del campo destino y de viceversa forma éste ultimo
+        \n\t\to	Un botón de búsqueda en forma de lupa el cual traza la ruta entre las dependencias previamente ingresadas, de lo contrario mostrara un error para informar al usuario
+        \n\t\to	Un botón en la parte superior para cancelar o reinicializar, aparte de que limpia tanto el mapa como los campos de texto desplaza al usuario al mapa de la universidad
+        \n\t\to	Y botones propios del google maps como el de localización actual y de zoom, aquí hay que tener presente que se deben tener activados los servicios de localización (gps) para que sea detectable, así mismo cuando esta lo sea el marcador de ubicación indicara la posición del usuario, y su color e información variara dependiendo si está o no dentro de la universidad, además de mostrar un rastro por donde se ha recorrido.
+        \n\t\tNota: la precisión de la ubicación se verá determinada entre menor tamaño tenga el circulo que encapsula el indicador azul.
+        \n
+        \n\t•	Uso: el cual especifica navegación y eventos de la aplicación a disposición de la comunidad
+        \n\t•	Acerca de: muestra información relevante de quienes formaron parte fundamental en el desarrollo de esta tesis
+        "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView27"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
